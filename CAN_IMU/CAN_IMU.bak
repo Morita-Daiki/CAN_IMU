@@ -1,0 +1,205 @@
+EESchema Schematic File Version 4
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Interface_CAN_LIN:TCAN332G U?
+U 1 1 5DE5E78B
+P 5650 4400
+F 0 "U?" H 6000 4850 50  0000 C CNN
+F 1 "TCAN332G" H 5850 4750 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5650 3900 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/tcan337.pdf" H 5650 4400 50  0001 C CNN
+	1    5650 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DE5ED4D
+P 5650 4800
+F 0 "#PWR?" H 5650 4550 50  0001 C CNN
+F 1 "GND" H 5655 4627 50  0000 C CNN
+F 2 "" H 5650 4800 50  0001 C CNN
+F 3 "" H 5650 4800 50  0001 C CNN
+	1    5650 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5DE5F24A
+P 4600 3500
+F 0 "#PWR?" H 4600 3350 50  0001 C CNN
+F 1 "+3V3" H 4615 3673 50  0000 C CNN
+F 2 "" H 4600 3500 50  0001 C CNN
+F 3 "" H 4600 3500 50  0001 C CNN
+	1    4600 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5DE60387
+P 4900 3950
+F 0 "D?" V 4939 3833 50  0000 R CNN
+F 1 "LED" V 4848 3833 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4900 3950 50  0001 C CNN
+F 3 "~" H 4900 3950 50  0001 C CNN
+	1    4900 3950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5DE62E30
+P 4600 3650
+F 0 "R?" H 4670 3696 50  0000 L CNN
+F 1 "500" H 4670 3605 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4530 3650 50  0001 C CNN
+F 3 "~" H 4600 3650 50  0001 C CNN
+	1    4600 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 4100 4900 4200
+Wire Wire Line
+	4900 4200 5150 4200
+Wire Wire Line
+	5150 4300 4600 4300
+Wire Wire Line
+	4600 4300 4600 4100
+Wire Wire Line
+	4900 4200 4450 4200
+Connection ~ 4900 4200
+Wire Wire Line
+	4450 4300 4600 4300
+Connection ~ 4600 4300
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5DE644D3
+P 6550 3500
+F 0 "#PWR?" H 6550 3350 50  0001 C CNN
+F 1 "+3V3" H 6565 3673 50  0000 C CNN
+F 2 "" H 6550 3500 50  0001 C CNN
+F 3 "" H 6550 3500 50  0001 C CNN
+	1    6550 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 3500 5650 4000
+$Comp
+L Device:C C?
+U 1 1 5DE64EED
+P 6150 3650
+F 0 "C?" H 6265 3696 50  0000 L CNN
+F 1 "0.1u" H 6265 3605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6188 3500 50  0001 C CNN
+F 3 "~" H 6150 3650 50  0001 C CNN
+	1    6150 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5DE64FB4
+P 6550 3650
+F 0 "C?" H 6665 3696 50  0000 L CNN
+F 1 "5-10u" H 6665 3605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6588 3500 50  0001 C CNN
+F 3 "~" H 6550 3650 50  0001 C CNN
+	1    6550 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DE66C2F
+P 6550 3800
+F 0 "#PWR?" H 6550 3550 50  0001 C CNN
+F 1 "GND" H 6555 3627 50  0000 C CNN
+F 2 "" H 6550 3800 50  0001 C CNN
+F 3 "" H 6550 3800 50  0001 C CNN
+	1    6550 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5DE67CE4
+P 4900 3500
+F 0 "#PWR?" H 4900 3350 50  0001 C CNN
+F 1 "+3V3" H 4915 3673 50  0000 C CNN
+F 2 "" H 4900 3500 50  0001 C CNN
+F 3 "" H 4900 3500 50  0001 C CNN
+	1    4900 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5DE67E6A
+P 5650 3500
+F 0 "#PWR?" H 5650 3350 50  0001 C CNN
+F 1 "+3V3" H 5665 3673 50  0000 C CNN
+F 2 "" H 5650 3500 50  0001 C CNN
+F 3 "" H 5650 3500 50  0001 C CNN
+	1    5650 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5DE6820B
+P 6150 3500
+F 0 "#PWR?" H 6150 3350 50  0001 C CNN
+F 1 "+3V3" H 6165 3673 50  0000 C CNN
+F 2 "" H 6150 3500 50  0001 C CNN
+F 3 "" H 6150 3500 50  0001 C CNN
+	1    6150 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DE68F12
+P 6150 3800
+F 0 "#PWR?" H 6150 3550 50  0001 C CNN
+F 1 "GND" H 6155 3627 50  0000 C CNN
+F 2 "" H 6150 3800 50  0001 C CNN
+F 3 "" H 6150 3800 50  0001 C CNN
+	1    6150 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5DE69EF5
+P 4900 3650
+F 0 "R?" H 4970 3696 50  0000 L CNN
+F 1 "500" H 4970 3605 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4830 3650 50  0001 C CNN
+F 3 "~" H 4900 3650 50  0001 C CNN
+	1    4900 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5DE6A216
+P 4600 3950
+F 0 "D?" V 4639 3833 50  0000 R CNN
+F 1 "LED" V 4548 3833 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4600 3950 50  0001 C CNN
+F 3 "~" H 4600 3950 50  0001 C CNN
+	1    4600 3950
+	0    -1   -1   0   
+$EndComp
+Text GLabel 6150 4300 2    50   Output ~ 0
+CAN_H
+Text GLabel 6150 4500 2    50   Output ~ 0
+CAN_L
+Text GLabel 4450 4200 0    50   Input ~ 0
+CAN_TX
+Text GLabel 4450 4300 0    50   Input ~ 0
+CAN_RX
+$EndSCHEMATC
