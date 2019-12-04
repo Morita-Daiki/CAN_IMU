@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:CAN_IMU-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -202,4 +203,93 @@ Text GLabel 4450 4200 0    50   Input ~ 0
 CAN_TX
 Text GLabel 4450 4300 0    50   Input ~ 0
 CAN_RX
+$Comp
+L Device:R R?
+U 1 1 5DE70DD4
+P 6900 4500
+F 0 "R?" H 6970 4546 50  0000 L CNN
+F 1 "60" H 6970 4455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6830 4500 50  0001 C CNN
+F 3 "~" H 6900 4500 50  0001 C CNN
+	1    6900 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5DE716FC
+P 7150 4500
+F 0 "R?" H 7220 4546 50  0000 L CNN
+F 1 "60" H 7220 4455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7080 4500 50  0001 C CNN
+F 3 "~" H 7150 4500 50  0001 C CNN
+	1    7150 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L SamacSys_Parts:SBTN01N-05 PS?
+U 1 1 5DE65B7E
+P 2450 2300
+F 0 "PS?" H 3050 2565 50  0000 C CNN
+F 1 "SBTN01N-05" H 3050 2474 50  0000 C CNN
+F 2 "SamacSys_Parts:SBTN01N05" H 3500 2400 50  0001 L CNN
+F 3 "https://www.meanwell.com/Upload/PDF/SBTN01/SBTN01-SPEC.PDF" H 3500 2300 50  0001 L CNN
+F 4 "SBTN01N-05" H 3500 2200 50  0001 L CNN "Description"
+F 5 "6.9" H 3500 2100 50  0001 L CNN "Height"
+F 6 "Mean Well" H 3500 2000 50  0001 L CNN "Manufacturer_Name"
+F 7 "SBTN01N-05" H 3500 1900 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "709-SBTN01N-05" H 3500 1800 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=709-SBTN01N-05" H 3500 1700 50  0001 L CNN "Mouser Price/Stock"
+F 10 "" H 3500 1600 50  0001 L CNN "RS Part Number"
+F 11 "" H 3500 1500 50  0001 L CNN "RS Price/Stock"
+F 12 "71028311" H 3500 1400 50  0001 L CNN "Allied_Number"
+F 13 "https://www.alliedelec.com/meanwellusa-sbtn01n-05/71028311/" H 3500 1300 50  0001 L CNN "Allied Price/Stock"
+	1    2450 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+24V #PWR?
+U 1 1 5DE67427
+P 2000 2400
+F 0 "#PWR?" H 2000 2250 50  0001 C CNN
+F 1 "+24V" H 2015 2573 50  0000 C CNN
+F 2 "" H 2000 2400 50  0001 C CNN
+F 3 "" H 2000 2400 50  0001 C CNN
+	1    2000 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDPWR #PWR?
+U 1 1 5DE67D1C
+P 2450 2300
+F 0 "#PWR?" H 2450 2100 50  0001 C CNN
+F 1 "GNDPWR" H 2250 2250 50  0000 C CNN
+F 2 "" H 2450 2250 50  0001 C CNN
+F 3 "" H 2450 2250 50  0001 C CNN
+	1    2450 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 2400 2450 2400
+$Comp
+L power:+5V #PWR?
+U 1 1 5DE68AE3
+P 3650 2300
+F 0 "#PWR?" H 3650 2150 50  0001 C CNN
+F 1 "+5V" H 3665 2473 50  0000 C CNN
+F 2 "" H 3650 2300 50  0001 C CNN
+F 3 "" H 3650 2300 50  0001 C CNN
+	1    3650 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DE692B6
+P 2450 2500
+F 0 "#PWR?" H 2450 2250 50  0001 C CNN
+F 1 "GND" H 2455 2327 50  0000 C CNN
+F 2 "" H 2450 2500 50  0001 C CNN
+F 3 "" H 2450 2500 50  0001 C CNN
+	1    2450 2500
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
