@@ -393,4 +393,80 @@ F 3 "" H 3650 1300 50  0001 C CNN
 	1    3650 1300
 	1    0    0    -1  
 $EndComp
+$Comp
+L MCU_ST_STM32F0:STM32F042K6Tx U?
+U 1 1 5DE77FCA
+P 3200 3800
+F 0 "U?" H 3550 2750 50  0000 C CNN
+F 1 "STM32F042K6Tx" H 3550 2850 50  0000 C CNN
+F 2 "Package_QFP:LQFP-32_7x7mm_P0.8mm" H 2800 2900 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00105814.pdf" H 3200 3800 50  0001 C CNN
+	1    3200 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5DE7A1A5
+P 3200 2800
+F 0 "#PWR?" H 3200 2650 50  0001 C CNN
+F 1 "+3V3" H 3215 2973 50  0000 C CNN
+F 2 "" H 3200 2800 50  0001 C CNN
+F 3 "" H 3200 2800 50  0001 C CNN
+	1    3200 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 2900 3300 2800
+Wire Wire Line
+	3300 2800 3200 2800
+Wire Wire Line
+	3100 2800 3100 2900
+Connection ~ 3200 2800
+Wire Wire Line
+	3200 2800 3100 2800
+Wire Wire Line
+	3200 2900 3200 2800
+$Comp
+L power:GND #PWR?
+U 1 1 5DE7B378
+P 3150 4850
+F 0 "#PWR?" H 3150 4600 50  0001 C CNN
+F 1 "GND" H 3155 4677 50  0000 C CNN
+F 2 "" H 3150 4850 50  0001 C CNN
+F 3 "" H 3150 4850 50  0001 C CNN
+	1    3150 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 4800 3200 4850
+Wire Wire Line
+	3200 4850 3150 4850
+Wire Wire Line
+	3100 4800 3100 4850
+Wire Wire Line
+	3100 4850 3150 4850
+Connection ~ 3150 4850
+Text Label 2450 3600 0    50   ~ 0
+OSCIN
+Wire Wire Line
+	2450 3600 2700 3600
+NoConn ~ 2700 3700
+Text Label 2450 4600 0    50   ~ 0
+SCL
+Text Label 2450 4500 0    50   ~ 0
+SDA
+Wire Wire Line
+	2450 4500 2700 4500
+Wire Wire Line
+	2700 4600 2450 4600
+Text GLabel 3700 4300 2    50   Output ~ 0
+CAN_TX
+Text GLabel 3700 4200 2    50   Output ~ 0
+CAN_RX
+Text GLabel 3700 4400 2    50   Input ~ 0
+SWDIO
+Text GLabel 3700 4500 2    50   Input ~ 0
+SWCLK
+Text GLabel 2700 3100 0    50   Input ~ 0
+RESET
 $EndSCHEMATC
