@@ -292,4 +292,67 @@ F 3 "" H 1250 1100 50  0001 C CNN
 	1    1250 1100
 	1    0    0    -1  
 $EndComp
+$Comp
+L Regulator_Linear:TLV70212_SOT23-5 U?
+U 1 1 5DE7821C
+P 3900 1050
+F 0 "U?" H 3900 1392 50  0000 C CNN
+F 1 "NJM12888F33" H 3900 1301 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 3900 1375 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/tlv702.pdf" H 3900 1100 50  0001 C CNN
+	1    3900 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5DE78FD8
+P 3350 1200
+F 0 "C?" H 3465 1246 50  0000 L CNN
+F 1 "0.1u" H 3465 1155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3388 1050 50  0001 C CNN
+F 3 "~" H 3350 1200 50  0001 C CNN
+	1    3350 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 1050 3600 950 
+$Comp
+L power:+5V #PWR?
+U 1 1 5DE7AC64
+P 3350 950
+F 0 "#PWR?" H 3350 800 50  0001 C CNN
+F 1 "+5V" H 3365 1123 50  0000 C CNN
+F 2 "" H 3350 950 50  0001 C CNN
+F 3 "" H 3350 950 50  0001 C CNN
+	1    3350 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DE7B2E4
+P 3350 1350
+F 0 "#PWR?" H 3350 1100 50  0001 C CNN
+F 1 "GND" H 3355 1177 50  0000 C CNN
+F 2 "" H 3350 1350 50  0001 C CNN
+F 3 "" H 3350 1350 50  0001 C CNN
+	1    3350 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DE7B63B
+P 3900 1350
+F 0 "#PWR?" H 3900 1100 50  0001 C CNN
+F 1 "GND" H 3905 1177 50  0000 C CNN
+F 2 "" H 3900 1350 50  0001 C CNN
+F 3 "" H 3900 1350 50  0001 C CNN
+	1    3900 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 950  3350 950 
+Wire Wire Line
+	3350 950  3350 1050
+Connection ~ 3600 950 
+Connection ~ 3350 950 
 $EndSCHEMATC
